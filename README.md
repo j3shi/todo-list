@@ -11,6 +11,8 @@
 - Node.js, Express, jsonwebtoken, bcrypt (backend)
 - PostgreSQL (database)
 
+[Videon linkki] (https://youtu.be/PX5hzt_9XPo)
+
 
 
 

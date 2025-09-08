@@ -1,12 +1,12 @@
 import { auth } from '../helper/auth.js'
 import { pool } from '../helper/db.js'
 import { Router } from 'express'
-import { getTasks } from '../controllers/TaskController.js'
+import { getTasks, postTask, deleteTask } from '../controllers/TaskController.js'
 
 const router = Router()
-
 router.get('/', getTasks)
-
+router.post('/', postTask)
+router.delete('/:id', deleteTask)
 
 router.post('/create', auth, (req, res, next) => {
   const { task } = req.body

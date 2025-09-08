@@ -14,7 +14,6 @@ app.use(express.urlencoded({ extended: false }))
 app.use('/', todoRouter)
 app.use('/user', userRouter)
 
-// virheiden käsittely
 app.use((err, req, res, next) => {
   const statusCode = err.status || 500
   res.status(statusCode).json({

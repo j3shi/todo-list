@@ -4,7 +4,7 @@
 - Käyttäjän rekisteröinti ja kirjautuminen (salasana hashattu)
 - JWT autentikointi (JSON web token)
 - Tehtävien lisääminen, katselu ja poistaminen
-- PostgreSQL tietokanta tiedon tallennusta varten
+- PostgreSQL tietokanta datan tallennusta varten
 
 # Käytetyt teknologiat
 - React & Axios (frontend)

@@ -7,9 +7,6 @@ const router = Router()
 
 router.get('/', getTasks)
 
-const insertTask = async (description) => {
-  return await pool.query('INSERT INTO task (description) VALUES ($1) returning *', [description])
-}
 
 router.post('/create', auth, (req, res, next) => {
   const { task } = req.body
@@ -42,4 +39,3 @@ router.delete('/delete/:id', auth, (req, res, next) => {
 })
 
 export default router
-export { insertTask }
